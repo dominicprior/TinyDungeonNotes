@@ -10,7 +10,7 @@
          enableMouse="false"
          movable="false">
 
-    <Size x="63" y="40"/>
+    <Size x="200" y="150"/>
     <Anchors>
       <Anchor point="TOP">
         <Offset x="0" y="-90"/>
