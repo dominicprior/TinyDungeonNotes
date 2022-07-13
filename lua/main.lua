@@ -20,8 +20,5 @@ end
 
 function updateCoor()
     local zone = GetZoneText()
-    TestAddon3_MainFrame_xCoorNum:SetText([[one
-two
-three
-four  ]] .. zone)
+    TestAddon3_MainFrame_xCoorNum:SetText(zone)
 end
