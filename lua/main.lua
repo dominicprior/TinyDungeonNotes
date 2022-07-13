@@ -26,5 +26,5 @@ function updateCoor()
 
     position.x = math.floor(position.x * 10000) / 100
 
-    TestAddon3_MainFrame_xCoorNum:SetText(position.x)
+    TestAddon3_MainFrame_xCoorNum:SetText('h \n h' .. position.x)
 end
