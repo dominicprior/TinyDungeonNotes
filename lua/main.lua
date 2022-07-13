@@ -20,9 +20,7 @@ end
 
 function updateCoor()
     local mapID = C_Map.GetBestMapForUnit("player")
-
     local position = C_Map.GetPlayerMapPosition(mapID, "player")
-    local azimuth = GetPlayerFacing()
 
     position.x = math.floor(position.x * 10000) / 100
 
