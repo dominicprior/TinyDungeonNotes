@@ -19,12 +19,9 @@ end
 
 
 function updateCoor()
-    local mapID = C_Map.GetBestMapForUnit("player")
-    local position = C_Map.GetPlayerMapPosition(mapID, "player")
-
-    position.x = math.floor(position.x * 10000) / 100
-
+    local zone = GetZoneText()
     TestAddon3_MainFrame_xCoorNum:SetText([[one
 two
-three  ]] .. GetZoneText())
+three
+four  ]] .. zone)
 end
