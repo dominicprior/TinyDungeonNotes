@@ -28,5 +28,5 @@ function updateCoor()
 
     TestAddon3_MainFrame_xCoorNum:SetText([[one
 two
-three]] .. position.x)
+three  ]] .. GetZoneText())
 end

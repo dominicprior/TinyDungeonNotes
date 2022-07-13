@@ -17,9 +17,6 @@
       </Anchor>
     </Anchors>
 
-    <Frames>
-    </Frames>
-
     <Layers>
       <Layer level="BACKGROUND" setAllPoints="true">
         <Texture name="foo">
