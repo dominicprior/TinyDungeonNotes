@@ -25,11 +25,6 @@ function updateCoor()
     local azimuth = GetPlayerFacing()
 
     position.x = math.floor(position.x * 10000) / 100
-    position.y = math.floor(position.y * 10000) / 100
-    azimuth = math.floor(azimuth * 1000) / 1000
 
-
-    TestAddon_MainFrame_xCoorNum:SetText(position.x)
-    TestAddon_MainFrame_yCoorNum:SetText(position.y)
-    TestAddon_MainFrame_azimuthNum:SetText(azimuth)
+    TestAddon3_MainFrame_xCoorNum:SetText(position.x)
 end

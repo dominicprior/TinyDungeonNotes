@@ -4,16 +4,16 @@
   <Script File="lua/cli.lua"/>
   <Script File="lua/main.lua"/>
     
-  <Frame name="TestAddon_MainFrame"
+  <Frame name="TestAddon3_MainFrame"
          parent="UIParent"
          hidden="false"
-         enableMouse="true"
-         movable="true">
+         enableMouse="false"
+         movable="false">
 
     <Size x="63" y="40"/>
     <Anchors>
-      <Anchor point="TOPLEFT">
-        <Offset x="20" y="-90"/>
+      <Anchor point="TOP">
+        <Offset x="0" y="-90"/>
       </Anchor>
     </Anchors>
 
@@ -37,9 +37,9 @@
 
     <Layers>
       <Layer>
-        <FontString name="$parent_xString"
+        <FontString name="$parent_xCoorNum"
                     inherits="SystemFont_Small"
-                    text="x = "
+                    text="0.0"
                     justifyV="TOP"
                     justifyH="RIGHT">
 
@@ -49,84 +49,9 @@
               <Offset x="5" y="-5"/>
             </Anchor>
           </Anchors>
-          <Color r="1" g="1" b="0" a="1"/>
+          <Color r="1" g="1" b="1" a="1"/>
         </FontString>
-        <FontString name="$parent_yString"
-                    inherits="SystemFont_Small"
-                    text="y = "
-                    justifyV="TOP"
-                    justifyH="RIGHT">
 
-          <Size x="0" y="10"/>
-          <Anchors>
-            <Anchor point="TOPLEFT"
-                    relativeTo="$parent_xString"
-                    relativePoint="BOTTOMLEFT"/>
-          </Anchors>
-          <Color r="1" g="1" b="0" a="1"/>
-        </FontString>
-        <FontString name="$parent_azimuthString"
-                    inherits="SystemFont_Small"
-                    text="F = "
-                    justifyV="TOP"
-                    justifyH="RIGHT">
-
-          <Size x="0" y="10"/>
-          <Anchors>
-            <Anchor point="TOPLEFT"
-                    relativeTo="$parent_yString"
-                    relativePoint="BOTTOMLEFT"/>
-          </Anchors>
-          <Color r="1" g="1" b="0" a="1"/>
-        </FontString>
-        
-
-
-        <FontString name="$parent_xCoorNum"
-                    inherits="SystemFont_Small"
-                    text="0.0"
-                    justifyV="TOP"
-                    justifyH="RIGHT">
-
-          <Size x="0" y="10"/>
-          <Anchors>
-            <Anchor point="TOPLEFT"
-                    relativeTo="$parent_xString"
-                    relativePoint="TOPRIGHT">
-              <Offset x="5" y="0"/>
-            </Anchor>
-          </Anchors>
-          <Color r="1" g="1" b="0" a="1"/>
-        </FontString>
-        <FontString name="$parent_yCoorNum"
-                    inherits="SystemFont_Small"
-                    text="0.0"
-                    justifyV="TOP"
-                    justifyH="RIGHT">
-
-          <Size x="0" y="10"/>
-          <Anchors>
-            <Anchor point="TOPLEFT"
-                    relativeTo="$parent_xCoorNum"
-                    relativePoint="BOTTOMLEFT"/>
-          </Anchors>
-          <Color r="1" g="1" b="0" a="1"/>
-        </FontString>
-        <FontString name="$parent_azimuthNum"
-                    inherits="SystemFont_Small"
-                    text="0.0"
-                    justifyV="TOP"
-                    justifyH="RIGHT">
-
-          <Size x="0" y="10"/>
-          <Anchors>
-            <Anchor point="TOPLEFT"
-                    relativeTo="$parent_yCoorNum"
-                    relativePoint="BOTTOMLEFT"/>
-          </Anchors>
-          <Color r="1" g="1" b="0" a="1"/>
-        </FontString>
-        
       </Layer>
     </Layers>
 
@@ -134,12 +59,6 @@
     <Scripts>
       <OnLoad function="onload"/>
       <OnUpdate function="onupdate"/>
-      <OnMouseDown>
-        TestAddon_MainFrame:StartMoving();
-      </OnMouseDown>
-      <OnMouseUp>
-        TestAddon_MainFrame:StopMovingOrSizing();
-      </OnMouseUp>
     </Scripts>
 
   </Frame>
