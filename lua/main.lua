@@ -1,5 +1,5 @@
-colorencode_updateInterval = 1.0
-colorencode_sinceLastUpdate = 1.0
+colorencode_updateInterval = 5.0
+colorencode_sinceLastUpdate = 5.0
 
 
 function onload(self)
