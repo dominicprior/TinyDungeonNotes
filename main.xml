@@ -31,12 +31,12 @@
                     inherits="SystemFont_Small"
                     text="0.0"
                     justifyV="TOP"
-                    justifyH="RIGHT">
+                    justifyH="LEFT">
 
-          <Size x="60" y="60"/>
+          <Size x="200" y="140"/>
           <Anchors>
             <Anchor point="TOPLEFT">
-              <Offset x="5" y="-5"/>
+              <Offset x="0" y="0"/>
             </Anchor>
           </Anchors>
           <Color r="1" g="1" b="1" a="1"/>
