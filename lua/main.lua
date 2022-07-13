@@ -1,5 +1,5 @@
-colorencode_updateInterval = 5.0
-colorencode_sinceLastUpdate = 5.0
+local updateInterval = 5.0
+local timeSinceLastUpdate = 5.0
 
 
 function onload(self)
@@ -8,17 +8,15 @@ end
 
 
 function onupdate(self, elapsed)
-    colorencode_sinceLastUpdate = colorencode_sinceLastUpdate + elapsed;  
-    if (colorencode_sinceLastUpdate > colorencode_updateInterval) then
-        -- CODE
-        updateCoor()
-
-        colorencode_sinceLastUpdate = 0;
+    timeSinceLastUpdate = timeSinceLastUpdate + elapsed;
+    if timeSinceLastUpdate > updateInterval then
+        updateNotes()
+        timeSinceLastUpdate = 0;
     end
 end
 
 
-function updateCoor()
+function updateNotes()
     local zone = GetZoneText()
     TestAddon3_MainFrame_xCoorNum:SetText(zone)
 end
