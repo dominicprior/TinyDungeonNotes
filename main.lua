@@ -9,11 +9,11 @@ local notes = {
 Ray - fear
 Soothsayer - MC]]},
 
-{'mana tombs',
+{'mana.tombs',
 [[Nexus Terror - fear
 Pandemonius - reflect
 Darkcaster - mana burn
-Theurgist - polymorph]]},
+Theurgist - sheep]]},
 
 {'auchenai crypts',
 [[Possessor - MC]]},
