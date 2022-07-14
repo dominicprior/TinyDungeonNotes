@@ -58,6 +58,8 @@ Aoenus - face him away]]},
 
 }
 
+-- Updates the dungeon note if enough time has elapsed
+-- and if we are in a new zone.
 
 function onupdate(self, elapsed)
     timeSinceLastUpdate = timeSinceLastUpdate + elapsed;
@@ -67,6 +69,8 @@ function onupdate(self, elapsed)
     end
 end
 
+-- Updates the dungeon note if we are in a new zone.
+
 function updateNotes()
     local newZone = GetZoneText()
     if newZone ~= currZone then
@@ -75,6 +79,8 @@ function updateNotes()
         TestAddon3_MainFrame_xCoorNum:SetText(note)
     end
 end
+
+-- Returns the note for the given zone.
 
 function findNote(zone)
     for k, patternAndNote in pairs(notes) do
