@@ -26,7 +26,7 @@
       <Layer>
         <FontString name="$parent_xCoorNum"
                     inherits="SystemFont_Small"
-                    text="0.0"
+                    text="nothing yet"
                     justifyV="TOP"
                     justifyH="LEFT">
 

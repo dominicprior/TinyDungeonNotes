@@ -1,5 +1,6 @@
-local updateInterval = 5.0
-local timeSinceLastUpdate = 5.0
+local updateInterval = 2.0
+local timeSinceLastUpdate = 2.0
+local currZone = "no zone yet"
 
 
 function onload(self)
@@ -11,12 +12,15 @@ function onupdate(self, elapsed)
     timeSinceLastUpdate = timeSinceLastUpdate + elapsed;
     if timeSinceLastUpdate > updateInterval then
         updateNotes()
-        timeSinceLastUpdate = 0;
+        timeSinceLastUpdate = 0
     end
 end
 
 
 function updateNotes()
-    local zone = GetZoneText()
-    TestAddon3_MainFrame_xCoorNum:SetText(zone)
+    local newZone = GetZoneText()
+    if newZone ~= currZone then
+        currZone = newZone
+        TestAddon3_MainFrame_xCoorNum:SetText(currZone)
+    end
 end
