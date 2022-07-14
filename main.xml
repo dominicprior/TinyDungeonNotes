@@ -10,7 +10,7 @@
          enableMouse="false"
          movable="false">
 
-    <Size x="200" y="100"/>
+    <Size x="150" y="40"/>
     <Anchors>
       <Anchor point="TOPLEFT">
         <Offset x="0" y="0"/>
@@ -30,7 +30,7 @@
                     justifyV="TOP"
                     justifyH="LEFT">
 
-          <Size x="200" y="140"/>
+          <Size x="150" y="80"/>
           <Anchors>
             <Anchor point="TOPLEFT">
               <Offset x="0" y="0"/>

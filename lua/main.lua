@@ -4,14 +4,54 @@ local currZone = "no zone yet"
 
 local notes = {
 
-{'ironforge',
-[[hello
-IF]]
-},
+{'slave pens',
+[[Champion - fear
+Ray - fear
+Soothsayer - MC]]},
+
+{'mana tombs',
+[[Nexus Terror - fear
+Pandemonius - reflect
+Darkcaster - mana burn
+Theurgist - polymorph]]},
+
+{'auchenai crypts',
+[[Possessor - MC]]},
+
+{'sethekk',
+[[Controller - MC totem
+Oracle - chain lightning
+Prophet - fear, ghost
+serpent   knock back?]]},
+
+{'hillsbrad',
+[[Warden - fear]]},
+
+{'shadow labyrinth',
+[[Fel Overseer - fear
+Deathsworn - stun
+Acolyte - heal
+Assassin - stealth
+Spellbinder - MC]]},
+
+{'mechanar',
+[[Sunseeker - summons adds
+Physician - anesthetic
+Tinkerer - high priority
+Capacitus - bombs, reflects when red]]},
+
+{'steamvault',
+[[Siren - fear
+Bog Overload - poison cloud
+Oracle - aoe silence]]},
+
+{'black morass',
+[[Rift Keeper - sheep, fear, pyroblast
+Temporus - no taunt, healing debuff (disarm), reflect
+Aoenus - face him away]]},
+
 {'shattrath',
-[[hello
-SH]]
-}
+[[hello shattrath]]}
 
 }
 
@@ -44,5 +84,5 @@ function findNote(zone)
             return patternAndNote[2]
         end
     end
-    return 'hey ' .. zone
+    return zone
 end
