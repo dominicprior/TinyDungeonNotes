@@ -50,6 +50,12 @@ Oracle - aoe silence]]},
 Temporus - no taunt, healing debuff (disarm), reflect
 Aoenus - face him away]]},
 
+{'botanica',
+[[no botanica info yet]]},
+
+{'arcatraz',
+[[no arcatraz info yet]]},
+
 {'shattrath',
 [[hello shattrath]]}
 
