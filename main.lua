@@ -56,15 +56,8 @@ Aoenus - face him away]]},
 {'arcatraz',
 [[no arcatraz info yet]]},
 
-{'shattrath',
-[[hello shattrath]]}
-
 }
 
-
-function onload(self)
-    print(GetAddOnMetadata("TestAddon", "Title") .. " v" .. GetAddOnMetadata("TestAddon", "Version") .. " loaded");
-end
 
 function onupdate(self, elapsed)
     timeSinceLastUpdate = timeSinceLastUpdate + elapsed;

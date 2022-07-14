@@ -42,7 +42,6 @@
 
 
     <Scripts>
-      <OnLoad function="onload"/>
       <OnUpdate function="onupdate"/>
     </Scripts>
 
