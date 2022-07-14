@@ -2,4 +2,5 @@
 ## Title: Test Addon
 ## Notes: Show coordinates, azimyth and pitch
 ## Version: 0.1
+main.lua
 main.xml
