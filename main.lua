@@ -20,9 +20,9 @@ Theurgist - sheep]]},
 
 {'sethekk',
 [[Controller - MC totem
-Oracle - chain lightning
 Prophet - fear, ghost
-serpent   knock back?]]},
+Oracle - chain lightning
+Serpent - knock back?]]},
 
 {'hillsbrad',
 [[Warden - fear]]},
