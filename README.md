@@ -1,7 +1,7 @@
 # TinyDungeonNotes
 
-This addon displays some notes about the current dungeon in the top left
-of the screen.
+This addon displays some notes about the current dungeon.  It simply
+lists some of the more dangerous mobs and their abilities.
 
 For example, in Mana-Tombs it displays this:
 ```
@@ -10,7 +10,7 @@ Pandemonius - reflect
 Darkcaster - mana burn
 Theurgist - sheep
 ```
-The notes name the most dangerous mobs and their spells so the tank can mark them
-with a skull or pull them way back.
+Currently, there aren't any options at all.  For example, the info
+is always displayed in the top left of the screen.
 
-Currently, there aren't any options at all.
+So far, it just has info for the Outland dungeons.
